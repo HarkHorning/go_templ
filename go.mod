@@ -1,4 +1,4 @@
-module components
+module go_templ
 
 go 1.24.1
 
