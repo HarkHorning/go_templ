@@ -9,7 +9,10 @@ import (
 func main() {
 
 	mux := http.NewServeMux()
+
+	// Routes
 	mux.HandleFunc("GET /", handlers.ListAllData)
+
 	log.Println("Listening on port 8080")
 	log.Fatal(http.ListenAndServe(":8080", mux))
 
@@ -17,7 +20,6 @@ func main() {
 	// 	component := components.Base()
 	// 	component.Render(context.Background(), os.Stdout)
 	// 	fmt.Println(component)
-
 	// })
 
 	// log.Println("Listening on port 8080")

@@ -6,6 +6,6 @@ import (
 )
 
 func ListAllData(w http.ResponseWriter, r *http.Request) {
-	component := components.Base()
+	component := components.Base("GoProject")
 	component.Render(r.Context(), w)
 }
