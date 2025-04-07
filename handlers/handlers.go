@@ -1,7 +1,7 @@
 package handlers
 
 import (
-	"go_templ/components"
+	"main/components"
 	"net/http"
 )
 

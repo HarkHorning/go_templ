@@ -1,7 +1,25 @@
 package components
 
-templ Base() {
-    <h1>
-        Howdy
-    </h1>
+templ Greeting() {
+  <div class="greeting">
+    <h1>Hello</h1>
+  </div>
 }
+
+templ Base() {
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  </head>
+  <body>
+    <header data-testid="headerTemplate">
+      @Greeting()
+    </header>
+    <p>Words and words and words.</p>
+  </body>
+  </html>
+}
+
