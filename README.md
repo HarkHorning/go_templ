@@ -1,1 +1,3 @@
-# go_templ
+# go & templ
+
+Just experimenting with go
