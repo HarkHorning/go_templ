@@ -1,37 +1,5 @@
 package components
 
-// css
-css flex() {
-  display: flex;
-  justify-content: center;
-}
-css col() {
-  flex-direction: column;
-}
-css sleeve() {
-  max-width: 1200px;
-}
-css textColor() {
-  color: white;
-}
-css spacing() {
-  gap: 1rem;
-  justify-content: space-between;
-  align-items: center;
-}
-
-//html
-templ Greeting() {
-  <nav class={flex(), spacing()}>
-    <header data-testid="headerTemplate">
-      <h1>Docx</h1>
-    </header>
-    <p>docs</p>
-    <p>sites</p>
-    <p>tech</p>
-  </nav>
-}
-
 templ Base(title string) {
   <!DOCTYPE html>
   <html lang="en">
@@ -43,6 +11,8 @@ templ Base(title string) {
   <body class={flex(), textColor()} style="background-color: rgb(43, 42, 42)">
     <div class={flex(), col(), sleeve()}>
       @Greeting()
+      @Content()
+      @Footer()
     </div>
   </body>
   </html>
