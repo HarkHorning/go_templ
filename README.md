@@ -1,3 +1,3 @@
 # go & templ
 
-Just experimenting with go
+Experimenting with go and templ.
