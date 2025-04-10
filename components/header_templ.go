@@ -47,7 +47,7 @@ func Greeting() templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "\"><header data-testid=\"headerTemplate\"><h1>Docx</h1></header><a>docs</a> <a>sites</a> <a>tech</a></nav>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "\"><header data-testid=\"headerTemplate\"><h1>Docx</h1></header><a></a> <a>docs</a> <a>sites</a> <a>tech</a></nav>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

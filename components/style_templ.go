@@ -32,7 +32,7 @@ func col() templ.CSSClass {
 
 func sleeve() templ.CSSClass {
 	templ_7745c5c3_CSSBuilder := templruntime.GetBuilder()
-	templ_7745c5c3_CSSBuilder.WriteString(`max-width:1200px;`)
+	templ_7745c5c3_CSSBuilder.WriteString(`width:1200px;`)
 	templ_7745c5c3_CSSID := templ.CSSID(`sleeve`, templ_7745c5c3_CSSBuilder.String())
 	return templ.ComponentCSSClass{
 		ID:    templ_7745c5c3_CSSID,
