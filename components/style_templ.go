@@ -52,11 +52,23 @@ func textColor() templ.CSSClass {
 
 func spacing() templ.CSSClass {
 	templ_7745c5c3_CSSBuilder := templruntime.GetBuilder()
-	templ_7745c5c3_CSSBuilder.WriteString(`width:100%;`)
 	templ_7745c5c3_CSSBuilder.WriteString(`gap:1rem;`)
 	templ_7745c5c3_CSSBuilder.WriteString(`justify-content:space-between;`)
 	templ_7745c5c3_CSSBuilder.WriteString(`align-items:center;`)
 	templ_7745c5c3_CSSID := templ.CSSID(`spacing`, templ_7745c5c3_CSSBuilder.String())
+	return templ.ComponentCSSClass{
+		ID:    templ_7745c5c3_CSSID,
+		Class: templ.SafeCSS(`.` + templ_7745c5c3_CSSID + `{` + templ_7745c5c3_CSSBuilder.String() + `}`),
+	}
+}
+
+func footerbox() templ.CSSClass {
+	templ_7745c5c3_CSSBuilder := templruntime.GetBuilder()
+	templ_7745c5c3_CSSBuilder.WriteString(`padding:1rem 2rem;`)
+	templ_7745c5c3_CSSBuilder.WriteString(`border-radius:12px;`)
+	templ_7745c5c3_CSSBuilder.WriteString(`background-color:#FFC000;`)
+	templ_7745c5c3_CSSBuilder.WriteString(`color:black;`)
+	templ_7745c5c3_CSSID := templ.CSSID(`footerbox`, templ_7745c5c3_CSSBuilder.String())
 	return templ.ComponentCSSClass{
 		ID:    templ_7745c5c3_CSSID,
 		Class: templ.SafeCSS(`.` + templ_7745c5c3_CSSID + `{` + templ_7745c5c3_CSSBuilder.String() + `}`),
