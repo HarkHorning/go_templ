@@ -1,6 +1,6 @@
 # go & templ
 
-Experimenting with Go and Templ & HTMX.
+Experimenting with Go, Templ & HTMX.
 
 
 ### Tasks:
