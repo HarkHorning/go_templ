@@ -1,17 +1,21 @@
 package main
 
-type Information struct {
-	Name        string
-	Description string
+type Documentation struct {
+	Title     string
+	paragraph string
 }
 
-var allData = []Information{
+var PageData = []Documentation{
 	{
-		Name:        "Steve",
-		Description: "Agressively single",
+		Title:     "Pointers",
+		paragraph: "Pointers point to points in your code when ... memory storage ... You get the idea ...",
 	},
 	{
-		Name:        "Doris",
-		Description: "Married",
+		Title:     "Structs",
+		paragraph: "Structs are structures which are used to provide custom types ... programming info ... You know what I mean ...",
+	},
+	{
+		Title:     "For Loops",
+		paragraph: "In Golang, loops are limited to only ... so programming stuff is done by doing things ... Yep.",
 	},
 }

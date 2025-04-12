@@ -1,13 +1,33 @@
 package components
 
+css ribbonStyle() {
+  margin: 0;
+  padding: 2rem 1rem;
+  border: 2px solid white;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+}
+css ribbonStyleOuter() {
+  padding: 0 0.25rem 0.1rem 0;
+  border-right: 2px solid white;
+  border-radius: 0 0 8px 8px;
+}
+css signin() {
+  color: #FFC000;
+  border: 2px solid #FFC000;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
 templ Greeting() {
   <nav class={flex(), spacing()}>
-    <header data-testid="headerTemplate">
-      <h1>Docx</h1>
+    <header data-testid="headerTemplate" class={ribbonStyleOuter()}>
+      <h1 class={ribbonStyle()}>Docx</h1>
     </header>
     <a></a>
     <a>docs</a>
     <a>sites</a>
     <a>tech</a>
+    <a class={signin}>Signin</a>
   </nav>
 }

@@ -1,17 +1,28 @@
 package components
 
-templ Base(title string) {
+import (
+  "main/models"
+)
+
+templ Base(topics []models.Topic) {
   <!DOCTYPE html>
   <html lang="en">
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>{ title }</title>
+      <title>title</title>
   </head>
-  <body class={flex(), textColor()} style="background-color: rgb(43, 42, 42)">
+  <body class={all(), flex(), textColor()} style="background-color: rgb(43, 42, 42)">
     <div class={flex(), col(), sleeve()}>
       @Greeting()
-      @Content()
+      <section class={flex(), col(), pagePadding()}>
+        for _, topic := range topics {
+          <div>
+            <h2>{topic.Title}</h2>
+            <p>{topic.Paragraph}</p>
+          </div>
+        }
+      </section>
       @Footer()
     </div>
   </body>
