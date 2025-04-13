@@ -5,6 +5,7 @@ type Topic struct {
 	Paragraph string
 }
 
+// Temp data before using db
 var Topics = []Topic{
 	{
 		Title:     "Pointers",

@@ -11,7 +11,9 @@ import templruntime "github.com/a-h/templ/runtime"
 // css
 func all() templ.CSSClass {
 	templ_7745c5c3_CSSBuilder := templruntime.GetBuilder()
-	templ_7745c5c3_CSSBuilder.WriteString(`padding:0;`)
+	templ_7745c5c3_CSSBuilder.WriteString(`font-family:'Work Sans';`)
+	templ_7745c5c3_CSSBuilder.WriteString(`font-size:18px;`)
+	templ_7745c5c3_CSSBuilder.WriteString(`padding:0 1rem;`)
 	templ_7745c5c3_CSSBuilder.WriteString(`margin:0;`)
 	templ_7745c5c3_CSSID := templ.CSSID(`all`, templ_7745c5c3_CSSBuilder.String())
 	return templ.ComponentCSSClass{

@@ -5,6 +5,7 @@ type Documentation struct {
 	paragraph string
 }
 
+// Temp data before using db
 var PageData = []Documentation{
 	{
 		Title:     "Pointers",
