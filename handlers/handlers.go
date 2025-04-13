@@ -7,6 +7,6 @@ import (
 )
 
 func ListAllData(w http.ResponseWriter, r *http.Request) {
-	component := components.Base(models.Topics)
+	component := components.Topic(models.Topics)
 	component.Render(r.Context(), w)
 }
