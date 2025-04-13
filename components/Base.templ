@@ -1,6 +1,6 @@
 package components
 
-templ Base(title string) {
+templ Base(section string) {
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -8,13 +8,16 @@ templ Base(title string) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
       <script src="/assets/js/htmx.min.js"></script>
-      <title>{title}</title>
+      <title>Docx</title>
   </head>
   <body class={all(), flex(), textColor()} style="background-color: #1F1C1C">
     <div class={flex(), col()}>
       @Header()
 
-      { children... }
+      <div class={flex()}>
+        <div class={pagePadding()}>{ section }</div>
+        { children... }
+      </div>
 
       @Footer()
     </div>

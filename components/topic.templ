@@ -5,7 +5,7 @@ import (
 )
 
 templ Topic(topics []models.Topic) {
-    @Base("Docx") {
+    @Base("sections") {
         <section class={flex(), col(), pagePadding()}>
             for _, topic := range topics {
                 <div>

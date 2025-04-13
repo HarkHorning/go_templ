@@ -1,22 +1,26 @@
 package main
 
 type Documentation struct {
-	Title     string
-	paragraph string
+	Title string
+	Links string
 }
 
 // Temp data before using db
 var PageData = []Documentation{
 	{
-		Title:     "Pointers",
-		paragraph: "Pointers point to points in your code when ... memory storage ... You get the idea ...",
+		Title: "Basic Go",
+		Links: "/basicGo",
 	},
 	{
-		Title:     "Structs",
-		paragraph: "Structs are structures which are used to provide custom types ... programming info ... You know what I mean ...",
+		Title: "Go File Structure",
+		Links: "/goStructure",
 	},
 	{
-		Title:     "For Loops",
-		paragraph: "In Golang, loops are limited to only ... so programming stuff is done by doing things ... Yep.",
+		Title: "Go Libraries",
+		Links: "/goLibraries",
+	},
+	{
+		Title: "Things",
+		Links: "/things",
 	},
 }

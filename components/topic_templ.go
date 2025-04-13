@@ -105,7 +105,7 @@ func Topic(topics []models.Topic) templ.Component {
 			}
 			return nil
 		})
-		templ_7745c5c3_Err = Base("Docx").Render(templ.WithChildren(ctx, templ_7745c5c3_Var2), templ_7745c5c3_Buffer)
+		templ_7745c5c3_Err = Base("sections").Render(templ.WithChildren(ctx, templ_7745c5c3_Var2), templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
