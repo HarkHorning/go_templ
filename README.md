@@ -1,6 +1,6 @@
 # go & templ
 
-Experimenting with Go, Templ & HTMX.
+Project with server side rendering using Go, Templ & HTMX.
 
 
 ### Tasks:
